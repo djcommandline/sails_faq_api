@@ -9,8 +9,9 @@ module.exports = {
   attributes: {
     question: { type: 'string' },
     answer: { type: 'string' },
-    owner: {
-      model: 'user'
+    comments: {
+      collection: 'message',
+      via: 'question'
     }
   }
 };

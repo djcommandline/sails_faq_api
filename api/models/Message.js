@@ -7,6 +7,12 @@
 
 module.exports = {
   attributes: {
-    'text': { type: 'string'}
+    text: { type: 'string'},
+    question:{
+      model: 'faq'
+    },
+    author: {
+      model: 'user'
+    }
   }
 };
