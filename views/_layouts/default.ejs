@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<%- partial ('part/head.ejs') %>
+<body id="<%= view.pathFromApp.replace(/\//g,'-').replace('-index', '').replace('views-', 'page-') %>">
+
+<style>
+.error {
+  padding: 10px;
+  background:#ee0000;
+}
+.success {
+  padding: 10px;
+  background:#00ee00;
+}
+</style>
+
+<%- partial ('part/error/flash.ejs') %>
+<%- partial ('part/ele_nav-bar.ejs') %>
+<%- partial ('part/_header.ejs') %>
+<%- body %>
+<%- partial ('part/_footer.ejs') %>
+
+
+<!--TEMPLATES-->
+
+<!--TEMPLATES END-->
+
+<!--SCRIPTS-->
+<script src="/js/dependencies/sails.io.js"></script>
+<!--SCRIPTS END-->
+</body>
+</html>
