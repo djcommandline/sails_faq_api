@@ -9,6 +9,7 @@ module.exports = {
   attributes: {
     question: { type: 'string' },
     answer: { type: 'string' },
+    joint: { type: 'string' },
     comments: {
       collection: 'message',
       via: 'question'
