@@ -33,8 +33,9 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    controller: 'HomeController',
+    action: 'index'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +46,41 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  // ├── aboutus.hbs
+  // ├── account.hbs
+  // ├── blank.hbs
+  // ├── blog.hbs
+  // ├── book.hbs
+  // ├── collection-view.hbs
+  // ├── faq.hbs
+  // ├── forgot.hbs
+  // ├── index.hbs
+  // ├── jobs.hbs
+  // ├── readme.hbs
+  // ├── register.hbs
+  // ├── signup.hbs
+  // ├── single-view.hbs
+  // └── tags.hbs/
+
+  'get /about': {
+    controller: 'PageController',
+    action: 'about'
+  },
+
+  'get /faq': {
+    controller: 'PageController',
+    action: 'faq'
+  },
+
+  'get /contact': {
+    controller: 'PageController',
+    action: 'contact'
+  },
+
+  'get /styleguide': {
+    controller: 'PageController',
+    action: 'styleguide'
+  }
 
 };
