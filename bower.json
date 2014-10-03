@@ -1,0 +1,43 @@
+{
+  "name": "faqute",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ZumaVentures/sails_faq_api",
+  "authors": [
+    "wok <wok@foodshelterlove.com>"
+  ],
+  "description": "Frequently Asked Queseetions",
+  "keywords": [
+    "questions",
+    "answers",
+    "comments"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "install" : {
+    "path" : {
+      "css": ".tmp/public/styles/css",
+      "less": "assets/styles/preload",
+      "js": "assets/js/dependencies/preload",
+      "eot": "assets/fonts/preload",
+      "svg": "assets/fonts/preload",
+      "woff": "assets/fonts/preload",
+      "ttf": "assets/fonts/preload"
+    },
+    "sources" : {
+      "bootstrap" : [
+          "bower_components/bootstrap/less/**",
+          "bower_components/bootstrap/js/**",
+          "bower_components/bootstrap/fonts/**"
+      ]
+    }
+  }
+}
