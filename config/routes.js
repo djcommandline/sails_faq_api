@@ -46,14 +46,24 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+
+
+
+
+
+
+
+
+  /***************************************************************************
+  *                                                                          *
+  * Static Pages                                                             *
+  *                                                                          *
+  ***************************************************************************/
+
   'get /about': {
     controller: 'PageController',
     action: 'about'
-  },
-
-  'get /faq': {
-    controller: 'PageController',
-    action: 'faq'
   },
 
   'get /contact': {
