@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
-<%- partial ('part/head.ejs') %>
+{{ include part/_head }}
 <body id="<%= view.pathFromApp.replace(/\//g,'-').replace('-index', '').replace('views-', 'page-') %>">
 
-<style>
-.error {
-  padding: 10px;
-  background:#ee0000;
-}
-.success {
-  padding: 10px;
-  background:#00ee00;
-}
-</style>
-
-<%- partial ('part/error/flash.ejs') %>
-<%- partial ('part/ele_nav-bar.ejs') %>
-<%- partial ('part/_header.ejs') %>
-<%- body %>
-<%- partial ('part/_footer.ejs') %>
-
+{{- include part/error/flash }}
+{{- include part/ele_nav-bar }}
+{{- include part/_header }}
+{{- body }}
+{{- include part/_footer }}
 
 <!--TEMPLATES-->
 
