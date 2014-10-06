@@ -20,10 +20,11 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "latest"
+    "jquery": "latest",
+    "normalize-less": "latest"
   },
-  "install" : {
-    "path" : {
+  "install": {
+    "path": {
       "css": ".tmp/public/styles/css",
       "less": "assets/styles/preload",
       "js": "assets/js/dependencies/preload",
@@ -32,11 +33,17 @@
       "woff": "assets/fonts/preload",
       "ttf": "assets/fonts/preload"
     },
-    "sources" : {
-      "bootstrap" : [
-          "bower_components/bootstrap/less/**",
-          "bower_components/bootstrap/js/**",
-          "bower_components/bootstrap/fonts/**"
+    "install": {
+      "ignore": ["normalize.css"]
+    },
+    "sources": {
+      "bootstrap": [
+        "bower_components/bootstrap/less/**",
+        "bower_components/bootstrap/js/**",
+        "bower_components/bootstrap/fonts/**"
+      ],
+      "normalize.less" : [
+        "bower_components/normalize.less"
       ]
     }
   }
