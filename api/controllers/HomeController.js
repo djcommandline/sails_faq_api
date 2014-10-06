@@ -11,7 +11,7 @@ module.exports = {
 		res.view(null, {
 		  title: 'Home Page',
 		  meta: 'meta information'
-		})
+		});
 	}
 
 };

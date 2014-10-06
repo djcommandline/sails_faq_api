@@ -1,0 +1,70 @@
+////
+///   [[ REPLEATED SITE ELEMENTS ]]
+//
+// --------------------------------
+
+header {
+
+}
+
+nav {
+
+}
+
+footer {
+
+}
+
+////
+///   [[ ELEMENTS ]]
+//
+// --------------------------------
+.repeated_element { // design elements found on more then one page
+
+}
+
+
+
+
+
+
+
+////
+///   [[ PAGES ]]
+//
+// --------------------------------
+.page-name { // this is the body class
+
+  section#unique_name {
+    // section specific overrides
+
+    .box {
+      // box expections here
+      // otherwise, .box should take on generalize rule found in
+      // app.less
+    }
+
+    // over ride repeated element
+    .repeated_element {
+
+    }
+
+    // keep section elments outside of .box in the css markup
+    //     section > .box > #unique_element
+    // is the same as
+    //     section > #unique_element
+    #unique_element {
+
+    }
+  } // end :: #unique_name
+
+
+  section#bios {
+    #cards {
+       .item {
+
+       }
+    }
+  }
+
+}  // end :: .page-name
