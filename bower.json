@@ -22,7 +22,8 @@
   "dependencies": {
     "jquery": "latest",
     "normalize-less": "latest",
-    "sweetalert": "latest"
+    "sweetalert": "latest",
+    "vue": "latest"
   },
   "install": {
     "path": {
@@ -35,8 +36,7 @@
       "ttf": "assets/fonts/preload"
     },
     "ignore": [
-      "normalize",
-      "sweet-alert"
+      "normalize"
     ],
     "sources": {
       "bootstrap": [
