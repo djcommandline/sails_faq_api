@@ -74,6 +74,11 @@ module.exports.routes = {
   'get /styleguide': {
     controller: 'PageController',
     action: 'styleguide'
+  },
+
+  'get /faqs': {
+    controller: 'PageController',
+    action: 'faq'
   }
 
 };
