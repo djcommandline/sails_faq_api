@@ -21,7 +21,8 @@
   ],
   "dependencies": {
     "jquery": "latest",
-    "normalize-less": "latest"
+    "normalize-less": "latest",
+    "sweetalert": "latest"
   },
   "install": {
     "path": {
@@ -33,18 +34,24 @@
       "woff": "assets/fonts/preload",
       "ttf": "assets/fonts/preload"
     },
-    "install": {
-      "ignore": ["normalize.css"]
-    },
+    "ignore": [
+      "normalize",
+      "sweet-alert"
+    ],
     "sources": {
       "bootstrap": [
         "bower_components/bootstrap/less/**",
         "bower_components/bootstrap/js/**",
         "bower_components/bootstrap/fonts/**"
       ],
-      "normalize.less" : [
-        "bower_components/normalize.less"
+      "normalize.less": [
+        "bower_components/normalize-less/normalize.less"
+      ],
+      "sweetalert": [
+        "bower_components/sweetalert/lib/sweet-alert.js"
       ]
     }
+  },
+  "devDependencies": {
   }
 }
