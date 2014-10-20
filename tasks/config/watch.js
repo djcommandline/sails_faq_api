@@ -27,7 +27,19 @@ module.exports = function(grunt) {
 
 			// When assets are changed:
 			tasks: ['syncAssets' , 'linkAssets']
-		}
+		},
+    livereload: {
+
+      // Browser live reloading @ref :: https://github.com/gruntjs/grunt-contrib-watch#live-reloading
+      options: {
+        livereload: true
+      },
+			// Assets to watch:
+			files: [
+				'.tmp/public/styles/*',
+				'.tmp/public/js/**/*'
+			]
+    }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');

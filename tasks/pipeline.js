@@ -26,20 +26,21 @@ var jsFilesToInject = [
   // Load sails.io before everything else
   'js/dependencies/sails.io.js',
 
-  // Load Frameworks
+  // Re-Order injection
   'js/dependencies/**/*jquery*.js',
-
-  // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js',
 
   // Preload Dependencies we specify from our bower.json
   // Use $ bower-installer
-  'js/dependencies/**/preload/*.js',
+  'js/dependencies/preload/**/*.js',
+
+  // Dependencies like jQuery, or Angular are brought in here
+  'js/dependencies/**/*.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
   'js/**/*.js'
 ];
+
 
 
 // Client-side HTML templates are injected using the sources below
