@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 {{ include part/_head }}
-<body id="<%= view.pathFromApp.replace(/\//g,'-').replace('-index', '').replace('page-', '').replace('views-', 'page-') %>">
+<body id="{{= view.pathFromApp.replace(/\//g,'-').replace('-index', '').replace('page-', '').replace('views-', 'page-') }}">
 {{- include part/error/flash }}
 {{- include part/ele_nav-bar }}
 {{- include part/_header }}
@@ -16,6 +16,8 @@
 <script src="/js/dependencies/sails.io.js"></script>
 <script src="/js/dependencies/preload/jquery/jquery.js"></script>
 <script src="/js/dependencies/preload/sweetalert/sweet-alert.js"></script>
+<script src="/js/dependencies/load/mousetrap.js"></script>
+<script src="/js/dependencies/load/sweet-alert.js"></script>
 <script src="/js/run.js"></script>
 <!--SCRIPTS END-->
 </body>
