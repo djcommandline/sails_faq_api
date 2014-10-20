@@ -1,29 +1,352 @@
 ////
-///   [[ REPLEATED SITE ELEMENTS ]]
+///   [[ PERSISTENT LAYOUT ELEMENTS ]]
 //
 // --------------------------------
-
 header {
-
 }
 
 nav {
-
 }
 
 footer {
-
 }
+
+
+
+//
+// [[ HEROS ]]
+//
+// ele_hero-banner
+// ele_hero-carousel
+//
+section#hero-banner {
+}
+
+section#hero-carousel {
+  background:#fff;
+  border: 0px solid white;
+}
+
+
+
+
+
+
+////
+///   [[ COLLECTION LAYOUTS AS ]]
+//
+//
+//
+// --------------------------------
+section.as_card {
+  div.item {
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    padding: 20px;
+    min-height: 300px;
+    cursor: pointer;
+    border: 1px solid black;
+
+    @as_card_breaks();
+
+    &:hover {
+      opacity: .8;
+    }
+
+    .box {
+    }
+
+    // .vote
+    .vote {
+      display: none;
+      width: 120px;
+      height: 120px;
+
+      a.upvote {
+      }
+
+      .count {
+
+      }
+    }
+
+    // .intro > .cover
+    .cover {
+      img {
+        width: 100%;
+      }
+    }
+
+    // .intro > .cover
+    .content {
+      padding: 20px 0;
+      min-height: 100px;
+    }
+
+    // .intro > .content > .title
+    .title {
+      h2 {
+        font-size: 16px;
+        line-height: 1em;
+        margin: 0 0 .2em 0;
+        padding: 0;
+
+        a {
+          font-size: 12px;
+        }
+      }
+
+      h3 {
+        line-height: 1em;
+        margin: 0 0 .4em 0;
+        padding: 0 0 .4em 0;
+      }
+    }
+
+    // .intro > .content > .desc
+
+    // .intro > .content > .info
+
+    // .details
+    .details {
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
+      height: 30%;
+      background: rgba(0,0,0,.5);
+      top: 0;
+      opacity: 0;
+    }
+
+    // .comments
+    .comments {
+      .count {
+
+      }
+    }
+
+
+    // stage change
+    &.is-active {
+      .details {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+section.as_feed {
+  div.item {
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    padding: 20px;
+    cursore: pointer;
+    border: 1px solid black;
+
+    @as_feed_breaks();
+
+    &:hover {
+
+    }
+
+    .box {
+    }
+
+    // .vote
+    .vote {
+      float: left;
+      width: 120px;
+      height: 120px;
+
+      a.upvote {
+      }
+
+      .count {
+
+      }
+    }
+
+    // .intro > .cover
+    .cover {
+      background: red;
+      float: left;
+      max-width: 120px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    // .intro > .content
+    .content {
+      display: inline-block;
+      float: left;
+      background: blue;
+      padding: 20px 0;
+      min-height: 120px;
+      padding-left: 50px;
+      text-align: left;
+
+      // .intro > .content > .title
+      .title {
+        h2 {
+          font-size: 16px;
+          line-height: 1em;
+          margin: 0 0 .2em 0;
+          padding: 0;
+
+          a {
+            font-size: 12px;
+          }
+        }
+
+        h3 {
+          line-height: 1em;
+          margin: 0 0 .4em 0;
+          padding: 0 0 .4em 0;
+        }
+      }
+
+    }
+
+
+
+    // .details
+    .details {
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
+      height: 30%;
+      background: rgba(0,0,0,.5);
+      top: 0;
+      opacity: 0;
+    }
+
+    // comments
+    .comments {
+      float: right;
+      width: 120px;
+      height: 120px;
+
+      .count {
+
+      }
+    }
+
+    // state changes
+    &.is-active {
+      .details {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+section.as_post {
+  div.item {
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    padding: 20px;
+    cursore: pointer;
+    border: 1px solid black;
+
+    &:hover {
+
+    }
+
+    .box {
+    }
+
+    // .vote
+    .vote {
+
+      a.upvote {
+      }
+
+      .count {
+
+      }
+    }
+
+    // .intro > .cover
+    .cover {
+      img {
+        width: 100%;
+      }
+    }
+
+    // .intro > .content
+    .content {
+    }
+
+
+    // .intro > .content > .title
+    .title {
+      h2 {
+
+        a {
+          font-size: 12px;
+        }
+      }
+
+      h3 {
+      }
+    }
+
+    // .details
+    .details {
+    }
+
+    // comments
+    .comments {
+      .count {
+      }
+    }
+
+    // state changes
+    &.is-active {
+      .details {
+      }
+    }
+
+  }
+}
+
+section.as_carousel {
+}
+
+section.as_masonry {
+}
+
+section.as_slideshow {
+}
+
 
 ////
 ///   [[ ELEMENTS ]]
 //
+// design elements found on more then one page
+//
 // --------------------------------
 .repeated_element { // design elements found on more then one page
-
 }
-
-
 
 
 
@@ -46,25 +369,14 @@ footer {
 
     // over ride repeated element
     .repeated_element {
-
     }
 
     // keep section elments outside of .box in the css markup
     //     section > .box > #unique_element
-    // is the same as
+    //        is the same as
     //     section > #unique_element
     #unique_element {
-
     }
   } // end :: #unique_name
-
-
-  section#bios {
-    #cards {
-       .item {
-
-       }
-    }
-  }
 
 }  // end :: .page-name
