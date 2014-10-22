@@ -37,6 +37,7 @@
   "devDependencies": {
     "grunt-contrib-imagemin": "^0.8.1",
     "grunt-favicons": "^0.6.4",
+    "grunt-grunticon": "^1.2.13",
     "grunt-svgmin": "^1.0.0"
   }
 }

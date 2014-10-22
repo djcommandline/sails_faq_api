@@ -44,6 +44,22 @@ module.exports = function(grunt) {
 				src: ['**/*'],
 				dest: 'www'
 			}]
+		},
+		font: {
+			files: [
+				{
+					expand: true,
+					cwd: 'assets/fonts/app',
+					src: ['**/grunticon.loader.js'],
+					dest: 'assets/js/dependencies/preload/grunticon'
+				},
+				{
+					expand: true,
+					cwd: 'assets/fonts/app',
+					src: ['**/icons*'],
+					dest: '.tmp/public/fonts'
+				}
+			]
 		}
 	});
 
