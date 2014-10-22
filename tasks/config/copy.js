@@ -20,9 +20,22 @@ module.exports = function(grunt) {
 			files: [{
 				expand: true,
 				cwd: './assets',
-				src: ['**/*.!(coffee|less)'],
+				src: [
+                                  '**/*.!(coffee|less)',
+                                  '!favisrc',
+                                  '!fav/favisrc/*',
+                                  '!fav/include.txt'
+                                ],
 				dest: '.tmp/public'
-			}]
+			},
+                        {
+				expand: true,
+				cwd: './assets/fav/favisrc',
+				src: [
+                                  '*',
+                                ],
+				dest: '.tmp/public'
+                        }]
 		},
 		build: {
 			files: [{

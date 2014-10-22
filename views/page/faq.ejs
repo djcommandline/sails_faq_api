@@ -1,3 +1,15 @@
+<div id="demo">
+    <h1>{{title | uppercase}}</h1>
+    <ul>
+        <li
+            v-repeat="todos"
+            v-on="click: done = !done"
+            class="{{done ? 'done' : ''}}">
+            {{content}}
+        </li>
+    </ul>
+</div>
+
 <section id="collection-cities" class="as_card">
   <div class="box">
 

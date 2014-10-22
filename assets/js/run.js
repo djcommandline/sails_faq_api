@@ -14,7 +14,9 @@
 //  [ ] -
 //
 
-
+//////////
+Globals
+var demo;
 
 //////////
 //// Call functions based on body class name that correlates with route.
@@ -43,9 +45,30 @@ var SiteJS = {
   // 404
   page_404: {
     init: function() {
-  }
-}
+    }
+  },
+  page_faq: {
+    init: function() {
 
+      var demo = new Vue({
+        el: '#demo',
+        data: {
+          title: 'todos',
+          todos: [
+            {
+            done: true,
+            content: 'Learn JavaScript'
+          },
+          {
+            done: false,
+            content: 'Learn Vue.js'
+          }
+          ]
+        }
+      });
+
+    }
+  }
 };
 
 
@@ -96,7 +119,7 @@ var layout_switch = function() {
     $('#' + tid).removeAttr('class').addClass(layout);
 
   });
-}
+};
 
 
 ////////
@@ -126,3 +149,24 @@ var openInnerHref = function() {
   });
 
 };
+
+
+
+  var demo = new Vue({
+    el: '#demo',
+    data: {
+      title: 'todos',
+      todos: [
+        {
+        done: true,
+        content: 'Learn JavaScript'
+      },
+      {
+        done: false,
+        content: 'Learn Vue.js'
+      }
+      ]
+    }
+  });
+
+

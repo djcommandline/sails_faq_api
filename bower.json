@@ -23,7 +23,8 @@
     "jquery": "latest",
     "normalize-less": "latest",
     "sweetalert": "latest",
-    "vue": "latest"
+    "vue": "latest",
+    "rivets": "latest"
   },
   "install": {
     "path": {
