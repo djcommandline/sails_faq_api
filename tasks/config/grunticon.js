@@ -1,4 +1,3 @@
-
 /**
 * Grunt Icons.
 *

@@ -1,4 +1,4 @@
-/**
+/**rn
  * Clean files and folders.
  *
  * ---------------------------------------------------------------
@@ -13,7 +13,8 @@ module.exports = function(grunt) {
 
 	grunt.config.set('clean', {
 		dev: ['.tmp/public/**'],
-		build: ['www']
+		build: ['www'],
+		fonts: ['assets/svg/icons/min/*.svg']
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
