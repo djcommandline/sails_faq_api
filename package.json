@@ -35,9 +35,14 @@
   "author": "wokka",
   "license": "",
   "devDependencies": {
-    "grunt-contrib-imagemin": "^0.8.1",
     "grunt-favicons": "^0.6.4",
+    "grunt-contrib-imagemin": "^0.8.1",
     "grunt-grunticon": "^1.2.13",
+    "grunt-iconizr": "^0.2.2",
+    "grunt-newer": "^0.7.0",
+    "grunt-sed": "^0.1.1",
+    "grunt-svg-merge": "^0.1.2",
+    "grunt-svg-sprite": "^0.3.2",
     "grunt-svgmin": "^1.0.0"
   }
 }

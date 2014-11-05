@@ -1,0 +1,66 @@
+.svg-heart { 
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(/assets/icons/icons.svg);
+}
+
+.svg-heart-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-home { 
+	background-position: 0 -48px;
+	background-repeat: no-repeat;
+	background-image: url(/assets/icons/icons.svg);
+}
+
+.svg-home-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-mail { 
+	background-position: 0 -96px;
+	background-repeat: no-repeat;
+	background-image: url(/assets/icons/icons.svg);
+}
+
+.svg-mail-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-marker { 
+	background-position: 0 -144px;
+	background-repeat: no-repeat;
+	background-image: url(/assets/icons/icons.svg);
+}
+
+.svg-marker-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-monitor { 
+	background-position: 0 -192px;
+	background-repeat: no-repeat;
+	background-image: url(/assets/icons/icons.svg);
+}
+
+.svg-monitor-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-time { 
+	background-position: 0 -240px;
+	background-repeat: no-repeat;
+	background-image: url(/assets/icons/icons.svg);
+}
+
+.svg-time-dims {
+	width: 48px;
+	height: 48px;
+}
+

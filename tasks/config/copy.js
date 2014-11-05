@@ -11,57 +11,67 @@
  * Copies all directories nd files from the .tmp/public directory into a www directory.
  *
  * For usage docs see:
- * 		https://github.com/gruntjs/grunt-contrib-copy
+ * 		https://<git></git>hub.com/gruntjs/grunt-contrib-copy
  */
 module.exports = function(grunt) {
 
-	grunt.config.set('copy', {
-		dev: {
-			files: [{
-				expand: true,
-				cwd: './assets',
-				src: [
-                                  '**/*.!(coffee|less)',
-                                  '!favisrc',
-                                  '!fav/favisrc/*',
-                                  '!fav/include.txt'
-                                ],
-				dest: '.tmp/public'
-			},
-                        {
-				expand: true,
-				cwd: './assets/fav/favisrc',
-				src: [
-                                  '*',
-                                ],
-				dest: '.tmp/public'
-                        }]
-		},
-		build: {
-			files: [{
-				expand: true,
-				cwd: '.tmp/public',
-				src: ['**/*'],
-				dest: 'www'
-			}]
-		},
-		font: {
-			files: [
-				{
-					expand: true,
-					cwd: 'assets/fonts/app',
-					src: ['**/grunticon.loader.js'],
-					dest: 'assets/js/dependencies/preload/grunticon'
-				},
-				{
-					expand: true,
-					cwd: 'assets/fonts/app',
-					src: ['**/icons*'],
-					dest: '.tmp/public/fonts'
-				}
-			]
-		}
-	});
+  grunt.config.set('copy', {
+    dev: {
+      files: [{
+        expand: true,
+        cwd: './assets',
+        src: [
+          '**/*.!(coffee|less)',
+          '!**/fav/**',
+          '!**/svg/**',
+          '!robots.txt'
+        ],
+        dest: '.tmp/public'
+      },
+      {
+        expand: true,
+        cwd: './assets/fav/favisrc',
+        src: [
+          '*',
+        ],
+        dest: '.tmp/public'
+      },
+      {
+        src: ['assets/robots.txt'],
+        dest: '.tmp/public/robots.txt'
+      }
+      ]
+    },
+    build: {
+      files: [{
+        expand: true,
+        cwd: '.tmp/public',
+        src: ['**/*'],
+        dest: 'www'
+      }]
+    },
+    icons: {
+      files: [{
+        expand: true,
+        cwd: './assets/svg/iconizr',
+        src: [
+          'icons/*',
+          '!*.css',
+          '!**/preview/**',
+        ],
+        dest: '.tmp/public/assets'
+      },
+      {
+        expand: true,
+        cwd: './assets/svg/iconizr',
+        src: [
+          '*.css',
+        ],
+        dest: '.tmp/public/assets/css'
+      },
+      ]
+    }
+  });
 
-	grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 };

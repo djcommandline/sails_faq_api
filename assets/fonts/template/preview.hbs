@@ -1,0 +1,39 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Icons Preview!</title>
+    <style>
+      section {
+        margin: 30px auto;
+        padding: 30px;
+        background-image: linear-gradient(#eee 25%, transparent 25%, transparent), linear-gradient(#eee 25%, transparent 25%, transparent), linear-gradient(transparent 75%, #eee 75%), linear-gradient(transparent 75%, #eee 75%);
+        width: 100%;
+        background-size: 10px 10px;
+      }
+      .specimen {
+        border-bottom: 1px solid black;
+        padding: 20px 0;
+      }
+    </style>
+    <script>
+      {{{loaderText}}}
+      grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"]);
+    </script>
+    <noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
+  </head>
+
+  <body>
+    <section style="max-width: 980px; width: 100%; margin: 0 auto;>
+      {{#each icons}}
+      {{#with this}}
+      <div class="specimen">
+          <pre>{{prefix}}{{name}}:</pre>
+          <div class="{{prefixClass}}{{name}}" style="width: {{width}}px; height: {{height}}px;" >
+          </div>
+      </div>
+      {{/with}}
+      {{/each}}
+    </section>
+  </body>
+
+</html>
