@@ -8,11 +8,16 @@
 module.exports = {
   attributes: {
     text: { type: 'string'},
+    id: { type: 'string'},
     question:{
       model: 'faq'
     },
     author: {
       model: 'user'
+    },
+    // custom instance
+    sponsor: function() {
+      return this.text;
     }
   }
 };

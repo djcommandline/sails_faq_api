@@ -65,6 +65,15 @@ module.exports.connections = {
     // database: 'your_mongo_db_name_here'
   },
 
+  mongoSandBox: {
+    adapter: 'sails-mongo',
+    host: '111.222.33.44',
+    port: 27017,
+    user: 'sandbox',
+    password: 'sandbox',
+    database: 'sandbox'
+  },
+
   /***************************************************************************
   *                                                                          *
   * PostgreSQL is another officially supported relational database.          *
